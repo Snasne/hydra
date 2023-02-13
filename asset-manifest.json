@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hydra/static/css/main.f6cccce5.css",
+    "main.js": "/hydra/static/js/main.5909c70d.js",
+    "static/media/manVR.png": "/hydra/static/media/manVR.6c913e60239d6c9c6725.png",
+    "static/media/pexels-michelangelo-buonarroti.png": "/hydra/static/media/pexels-michelangelo-buonarroti.ec823c49554b2e22ff2c.png",
+    "static/media/tech-hard-girl-vr.png": "/hydra/static/media/tech-hard-girl-vr.25808376d0288e1e8425.png",
+    "static/media/mainBg.png": "/hydra/static/media/mainBg.e4140f49e128738d26d5.png",
+    "static/media/simulation.png": "/hydra/static/media/simulation.6f6ba1c7dfd06953c9d1.png",
+    "static/media/outdoor.png": "/hydra/static/media/outdoor.b5fefeccc7f95567f0bd.png",
+    "static/media/selfCare.png": "/hydra/static/media/selfCare.baafe1f64596ef5f5ff6.png",
+    "static/media/education.png": "/hydra/static/media/education.820d6cd613f0cd0ec586.png",
+    "static/media/serviceBg.png": "/hydra/static/media/serviceBg.07e7a48deb200c742507.png",
+    "static/media/processBg.png": "/hydra/static/media/processBg.9ad3f0e157cb856926a1.png",
+    "index.html": "/hydra/index.html",
+    "main.f6cccce5.css.map": "/hydra/static/css/main.f6cccce5.css.map",
+    "main.5909c70d.js.map": "/hydra/static/js/main.5909c70d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6cccce5.css",
+    "static/js/main.5909c70d.js"
+  ]
+}
