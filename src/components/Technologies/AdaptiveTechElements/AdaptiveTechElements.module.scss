@@ -1,0 +1,96 @@
+.wrapper {
+    width: fit-content; height: fit-content;
+    display: flex; justify-content: center; align-items: center;
+    .container {
+        width: 400px; height: 300px;
+        display: flex; justify-content: space-between; align-items: center;
+        .borderLeftArrow {
+            display: flex; justify-content: center; align-items: center;
+            width: 62px; height: 62px;
+            border-radius: 50%;
+            border: 0;
+            background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+            margin-left: 5px;
+            cursor: pointer;
+            .circleLeftArrow {
+                width: 44px; height: 44px;
+                display: flex; justify-content: center; align-items: center;
+                background: rgb(192,183,232);
+                background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                border-radius: 50%;
+                .leftArrow {
+                    width: 32px; height: 32px;
+                    background-image: url(./Assets/leftArrow.png);
+                    background-size: cover;
+                }
+            }
+        }
+
+        .unrealEngine {
+            width: 174px; height: 174px;
+            background-image: url(./Assets/unrealEngine.png);
+            background-size: cover;
+        }
+        .unity {
+            width: 252px; height: 252px;
+            background-image: url(./Assets/unity.png);
+            background-size: cover;
+        }
+        .oculus {
+            width: 263px; height: 263px;
+            background-image: url(./Assets/oculus.png);
+            background-size: cover;
+        }
+        .vive {
+            width: 282px; height: 282px;
+            background-image: url(./Assets/vive.png);
+            background-size: cover;
+        }
+
+        .borderRightArrow {
+            display: flex; justify-content: center; align-items: center;
+            width: 62px; height: 62px;
+            border-radius: 50%;
+            border: 0;
+            background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+            margin-left: 5px;
+            cursor: pointer;
+            .circleRightArrow {
+                width: 44px; height: 44px;
+                display: flex; justify-content: center; align-items: center;
+                background: rgb(192,183,232);
+                background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                border-radius: 50%;
+                .rightArrow {
+                    width: 32px; height: 32px;
+                    background-image: url(./Assets/rightArrow.png);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        .container {
+            width: 320px;
+            .unrealEngine {
+                width: 152px; height: 152px;
+            }
+            .unity {
+                width: 152px; height: 152px;
+            }
+            .oculus {
+                width: 152px; height: 152px;
+            }
+            .vive {
+                width: 152px; height: 152px;
+            }
+        }
+    }
+}

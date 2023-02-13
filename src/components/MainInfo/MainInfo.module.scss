@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw; height: 80vh;
+    box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center;
+    background-image: url(./Assets/mainBg.png);
+    background-size: cover;
+    background-position: bottom 50px right 0px;
+    .container {
+        width: 90%; height: 90%;
+        display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+        .container__topInfo {
+            width: 100%;
+            display: flex; justify-content: space-between; align-items: center;
+            .topInfo__leftInfo {
+                display: flex; justify-content: space-between; align-items: center; 
+            }
+            .topInfo__rightInfo {
+                width: 550px; height: 500px;
+                display: flex; justify-content: center; align-items: center;
+                .rightInfo__borderContainer {
+                    width: 524px; height: 455px;
+                    background-color: rgba(#000000, 0.13);
+                    border-radius: 100px 100px 100px 240px;
+                    display: flex; justify-content: center; align-items: center;
+                    .borderContainer__image {
+                        width: 490px; height: 426px;
+                        border-radius: 100px 100px 100px 240px;
+                        background-size: cover;
+                        background-image: url(./Assets/pexels-michelangelo-buonarroti.png);
+                    }
+                }
+            }
+        }
+        .container__bottomInfo {
+            display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+            margin-top: 75px;
+        }
+        .container__bottomSlider {
+            display: none;
+            margin-top: 75px;
+        }
+    }
+}
+
+@media (max-width: 1352px) {
+    .wrapper {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1192px) {
+    .wrapper {
+        .container {
+            .container__topInfo {
+                .topInfo__rightInfo {
+                    width: 450px; height: 400px;
+                    .rightInfo__borderContainer {
+                        width: 424px; height: 355px;
+                        .borderContainer__image {
+                            width: 390px; height: 326px;
+                        }
+                    }
+                }
+            }
+            .container__bottomInfo {
+                display: none;
+            }
+            .container__bottomSlider {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        background-position: bottom 220px right 200px;
+        background-repeat: no-repeat;
+        .container {
+            .container__topInfo {
+                display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+                .topInfo__leftInfo {
+                    order: 2;
+                }
+                .topInfo__rightInfo {
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        background-position: bottom 220px right 5vw;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .wrapper {
+        .wrapper__background {
+           display: none;
+        }
+        .container {
+            .container__topInfo {
+                .topInfo__rightInfo {
+                    width: 340px; height: 296px;
+                    .rightInfo__borderContainer {
+                        width: 340px; height: 296px;
+                        .borderContainer__image {
+                            width: 318px; height: 277px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        background-position: bottom 220px right -25vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        .container {
+            .container__topInfo {
+                .topInfo__rightInfo {
+                    width: 290px; height: 246px;
+                    .rightInfo__borderContainer {
+                        width: 290px; height: 246px;
+                        .borderContainer__image {
+                            width: 268px; height: 229px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

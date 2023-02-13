@@ -1,0 +1,127 @@
+.wrapper {
+    width: 100vw; height: 80vh;
+    box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center;
+    .container {
+        width: 90%; height: 100%;
+        display: flex; justify-content: flex-start; align-items: center; flex-flow: column nowrap;
+        .header {
+            width: 100%; height: fit-content;
+            display: flex; justify-content: center; align-items: center;
+        }
+        .processSection {
+            width: 90%; height: fit-content;
+            display: flex; justify-content: space-between; align-items: center;
+            margin-top: 50px;
+            background-image: url(./Assets/processBg.png);
+            background-size: cover;
+            background-position: bottom 150px right -50px;
+            background-size: 100% 175px;
+            background-repeat: no-repeat;
+        }
+        .slider {
+            width: 90%; height: fit-content;
+            display: none; justify-content: center; align-items: flex-end;
+            margin-top: 50px;
+            .slider__borderLeftArrow {
+                display: flex; justify-content: center; align-items: center;
+                width: 62px; height: 62px;
+                border-radius: 50%;
+                border: 0;
+                background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+                margin-right: 5px;
+                cursor: pointer;
+                .borderLeftArrow__background {
+                    width: 44px; height: 44px;
+                    display: flex; justify-content: center; align-items: center;
+                    background: rgb(192,183,232);
+                    background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                    background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                    background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                    border-radius: 50%;
+                    .background__leftArrow {
+                        width: 32px; height: 32px;
+                        background-image: url(./Assets/leftArrow.png);
+                        background-size: cover;
+                    }
+                }
+            }
+            .slider__borderRightArrow {
+                display: flex; justify-content: center; align-items: center;
+                width: 62px; height: 62px;
+                border-radius: 50%;
+                border: 0;
+                background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+                margin-left: 5px;
+                cursor: pointer;
+                .borderRightArrow__background {
+                    width: 44px; height: 44px;
+                    display: flex; justify-content: center; align-items: center;
+                    background: rgb(192,183,232);
+                    background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                    background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                    background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                    border-radius: 50%;
+                    .background__rightArrow {
+                        width: 32px; height: 32px;
+                        background-image: url(./Assets/rightArrow.png);
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .wrapper {
+        .container {
+            .processSection {
+                background-position: bottom 120px right -20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .container {
+            .processSection {
+                display: none;
+            }
+            .slider {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .wrapper {
+        .container {
+            .slider {
+                width: 100%;
+                .slider__borderLeftArrow {
+                    width: 44px; height: 44px;
+                    margin-right: 0;
+                    .borderLeftArrow__background {
+                        width: 32px; height: 32px;
+                        .background__leftArrow {
+                            width: 32px; height: 32px;
+                        }
+                    }
+                }
+                .slider__borderRightArrow {
+                    width: 44px; height: 44px;
+                    margin-left: 0;
+                    .borderRightArrow__background {
+                        width: 32px; height: 32px;
+                        .background__rightArrow {
+                            width: 32px; height: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

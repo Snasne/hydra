@@ -1,0 +1,147 @@
+.topInfo__leftInfo {
+    width: 500px;
+    .leftInfo__header {
+        display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+        .header__topText {
+            display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+            .header__modifiedText {
+                background: #C0B7E8;
+                background: linear-gradient(to right, #C0B7E8 0%, #8176af 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 46px;
+                font-weight: bold;
+                margin-right: 8px;
+            }
+            p {
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        .header__bottomText {
+            display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+            .header__modifiedText {
+                background: #C0B7E8;
+                background: linear-gradient(to right, #C0B7E8 0%, #8176af 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 46px;
+                font-weight: bold;
+                margin-left: 8px;
+            }
+            p {
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+    .leftInfo__body {
+        margin: 45px 0;
+        p {
+            font-size: 16px;
+            color: white;
+        }
+    }
+    .leftInfo__footer {
+        display: flex; justify-content: flex-start; align-items: center;
+        button {
+            color: #343045;
+            font-weight: bold;
+            padding: 15px 40px;
+            border: 0;
+            border-radius: 30px;
+            background: rgb(192,183,232);
+            background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                color: #ffffff;
+            }
+        }
+        .footer__arrowImage {
+            width: 100px; height: 100px;
+            background-size: cover;
+            background-image: url(../Assets/arrow-small-right.png);
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .topInfo__leftInfo {
+        .leftInfo__header {
+            display: flex; justify-content: center; align-items: center;
+        }
+        .leftInfo__body {
+            display: none;
+        }
+        .leftInfo__footer {
+            margin-top: 25px;
+            display: flex; justify-content: center; align-items: center;
+            button {
+                width: 80%;
+                padding: 25px 40px;
+            }
+            .footer__arrowImage {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .topInfo__leftInfo {
+        width: fit-content;
+        .leftInfo__header {
+            .header__topText {
+                display: flex; justify-content: center; align-items: flex-end; flex-flow: row nowrap;
+                .header__modifiedText {
+                    font-size: 36px;
+                }
+                p {
+                    font-size: 24px;
+                }
+            }
+            .header__bottomText {
+                display: flex; justify-content: center; align-items: flex-end; flex-flow: row nowrap;
+                .header__modifiedText {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+        .leftInfo__footer {
+            button {
+                width: 275px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .topInfo__leftInfo {
+        .leftInfo__header {
+            .header__topText {
+                .header__modifiedText {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+            .header__bottomText {
+                .header__modifiedText {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

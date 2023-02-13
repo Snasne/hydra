@@ -1,0 +1,90 @@
+.wrapper {
+    width: fit-content; height: fit-content;
+    display: flex; justify-content: center; align-items: center;
+    .container {
+        width: 630px;
+        display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+        h1 {
+            font-size: 36px; 
+            font-weight: bold;
+            color: white;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 36px; 
+            font-weight: lighter;
+            color: white;
+            margin-bottom: 45px;
+        }
+        p {
+            font-size: 16px; 
+            color: white;
+            margin-bottom: 30px;
+        }
+        button {
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 17px 40px;
+            border-radius: 40px;
+            border: 0;
+            background: rgb(114,100,176);
+            background: linear-gradient(221deg, rgba(114,100,176,1) 0%, rgba(176,163,235,1) 100%);
+            transition: 0.3s;
+            &:hover {
+                color: white
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .wrapper {
+        .container {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .container {
+            width: 630px;
+            display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+            h1 {
+                display: none;
+                margin-bottom: 0px;
+            }
+            h2 {
+                display: none;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 652px) {
+    .wrapper {
+        .container {
+            width: 352px;
+            display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+            h1 {
+                display: none;
+                margin-bottom: 0px;
+            }
+            h2 {
+                display: none;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .wrapper {
+        .container {
+            width: 302px;
+        }
+    }
+}

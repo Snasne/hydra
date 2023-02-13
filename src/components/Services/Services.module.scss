@@ -1,0 +1,128 @@
+.wrapper {
+    width: 100vw; height: fit-content; min-height: 80vh;
+    display: flex; justify-content: flex-start; align-items: center; flex-flow: column nowrap;
+    box-sizing: border-box;
+    background-image: url(./Assets/serviceBg.png);
+    background-size: cover;
+    .wrapper__header {
+        width: 90%;
+    }
+    .wrapper__cards {
+        width: fit-content; height: fit-content;
+        display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+        margin: 50px 0;
+        .simulationCard, .educationCard, .selfCareCard, .outdoorCard {
+            width: fit-content; height: fit-content;
+            margin: 0 10px;
+        }
+    }
+    .wrapper_sliderCards {
+        display: none; justify-content: center; align-items: center;
+        margin-top: 50px;
+        .wrapper__borderLeftArrow {
+            display: flex; justify-content: center; align-items: center;
+            width: 62px; height: 62px;
+            border-radius: 50%;
+            border: 0;
+            background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+            margin-right: 5px;
+            cursor: pointer;
+            .borderLeftArrow__background {
+                width: 44px; height: 44px;
+                display: flex; justify-content: center; align-items: center;
+                background: rgb(192,183,232);
+                background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                border-radius: 50%;
+                .background__leftArrow {
+                    width: 32px; height: 32px;
+                    background-image: url(./Assets/leftArrow.png);
+                    background-size: cover;
+                }
+            }
+        }
+        .cardsSlider {
+            display: flex; justify-content: center; align-items: center;
+        }
+        .wrapper__borderRightArrow {
+            display: flex; justify-content: center; align-items: center;
+            width: 62px; height: 62px;
+            border-radius: 50%;
+            border: 0;
+            background-color: rgba($color: #0E0E0E, $alpha: 0.32);
+            margin-left: 5px;
+            cursor: pointer;
+            .borderRightArrow__background {
+                width: 44px; height: 44px;
+                display: flex; justify-content: center; align-items: center;
+                background: rgb(192,183,232);
+                background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+                background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);                
+                border-radius: 50%;
+                .background__rightArrow {
+                    width: 32px; height: 32px;
+                    background-image: url(./Assets/rightArrow.png);
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .wrapper__cards {
+            display: none;
+        }
+        .wrapper_sliderCards {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        .wrapper_sliderCards {
+            .wrapper__borderLeftArrow {
+                position: absolute; z-index: 1;
+                left: 12.5%;
+            }
+            .wrapper__borderRightArrow {
+                position: absolute; z-index: 1;
+                right: 12.5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    .wrapper {
+        .wrapper_sliderCards {
+            .wrapper__borderLeftArrow {
+                position: absolute;
+                left: 8.5%;
+            }
+            .wrapper__borderRightArrow {
+                position: absolute;
+                right: 8.5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper {
+        .wrapper_sliderCards {
+            .wrapper__borderLeftArrow {
+                position: absolute;
+                left: 1%;
+            }
+            .wrapper__borderRightArrow {
+                position: absolute;
+                right: 1%;
+            }
+        }
+    }
+}

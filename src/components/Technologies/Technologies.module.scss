@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100vw; height: 80vh;
+    display: flex; justify-content: center; align-items: center;
+    .container {
+        width: 80%; height: 100%;
+        display: flex; justify-content: flex-start; align-items: center; flex-flow: column nowrap;
+        .technologiesAndHardware {
+            width: fit-content; height: fit-content;
+        }
+        .container__techElements {
+            width: fit-content; height: fit-content;
+        }
+        .container__techElementsAdaptive {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .container {
+            .container__techElements {
+                display: none;
+            }
+            .container__techElementsAdaptive {
+                display: block;
+            }
+        }
+    }
+}

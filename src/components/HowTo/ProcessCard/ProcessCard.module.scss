@@ -1,0 +1,95 @@
+.wrapper {
+    width: fit-content; height: fit-content;
+    box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+    margin: 25px;
+    .borderCircle {
+        width: 198px; height: 198px;
+        background-color: rgba($color: #000000, $alpha: 0.32);
+        border-radius: 50%;
+        display: flex; justify-content: center; align-items: center;
+        .circle {
+            display: flex; justify-content: center; align-items: center;
+            width: 159px; height: 159px;
+            background: rgb(192,183,232);
+            background: -moz-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            background: -webkit-linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            background: linear-gradient(270deg, rgba(192,183,232,1) 0%, rgba(129,118,175,1) 100%);
+            border-radius: 50%;
+            h1 {
+                display: inline-block;
+                font-size: 64px;
+                font-weight: bold;
+                color: #343045;
+            }
+        }
+    }
+    .container {
+        display: flex; justify-content: center; align-items: center;
+        margin-top: 25px;
+        .container_rightArrow {
+            width: 67px; height: 67px;
+            background-image: url(./Assets/arrow-small-right.png);
+            background-size: cover;
+        }
+        .container__description {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            h1 {
+                display: inline-block;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+            }
+            h2 {
+                display: inline-block;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .wrapper {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .container {
+            .container_rightArrow {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .wrapper {
+        margin: 0;
+        .borderCircle {
+            width: 198px; height: 198px;
+            .circle {
+                width: 159px; height: 159px;
+                h1 {
+                    font-size: 58px;
+                }
+            }
+        }
+        .container {
+            .container_rightArrow {
+                width: 67px; height: 67px;
+            }
+            .container__description {
+                h1 {
+                    font-size: 20px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

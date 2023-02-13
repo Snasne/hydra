@@ -1,0 +1,75 @@
+.wrapper {
+    width: 100vw; height: fit-content;
+    box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center;
+    .container {
+        width: 90%; height: fit-content;
+        display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+        .body {
+            width: 90%; height: fit-content;
+            margin-top: 25px;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            .body__image {
+                width: 524px; height: 557px;
+                background-image: url(./Assets/manVR.png);
+                background-size: cover;
+                border-radius: 240px 110px 240px 110px;
+            }
+            .body__middleText {
+                margin-top: 50px;
+                width: fit-content; height: fit-content;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .wrapper {
+        .container {
+            .body {
+                margin-bottom: 50px;
+                .body__image {
+                    width: 474px; height: 507px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1210px) {
+    .wrapper {
+        .container {
+            .body {
+                display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;
+                .body__image {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 652px) {
+    .wrapper {
+        .container {
+            .body {
+                .body__image {
+                    width: 337px; height: 358px;
+                    border-radius: 140px 60px 140px 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .wrapper {
+        .container {
+            .body {
+                .body__image {
+                    width: 287px; height: 308px;
+                }
+            }
+        }
+    }
+}

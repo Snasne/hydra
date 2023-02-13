@@ -1,0 +1,56 @@
+.container {
+    width: 100%; height: fit-content;
+    display: flex; justify-content: space-between; align-items: center;
+    transition: 0.2s;
+    .unrealEngine {
+        width: 174px; height: 174px;
+        background-image: url(./Assets/unrealEngine.png);
+        background-size: cover;
+        margin-right: 91px;
+    }
+    .unity {
+        width: 252px; height: 252px;
+        background-image: url(./Assets/unity.png);
+        background-size: cover;
+        margin-right: 71px;
+    }
+    .oculus {
+        width: 263px; height: 263px;
+        background-image: url(./Assets/oculus.png);
+        background-size: cover;
+        margin-right: 56px;
+    }
+    .vive {
+        width: 282px; height: 282px;
+        background-image: url(./Assets/vive.png);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        .unrealEngine {
+            width: 174px; height: 174px;
+            background-image: url(./Assets/unrealEngine.png);
+            background-size: cover;
+            margin-right: 9.1px;
+        }
+        .unity {
+            width: 252px; height: 252px;
+            background-image: url(./Assets/unity.png);
+            background-size: cover;
+            margin-right: 7.1px;
+        }
+        .oculus {
+            width: 263px; height: 263px;
+            background-image: url(./Assets/oculus.png);
+            background-size: cover;
+            margin-right: 5.6px;
+        }
+        .vive {
+            width: 282px; height: 282px;
+            background-image: url(./Assets/vive.png);
+            background-size: cover;
+        }
+    }
+}

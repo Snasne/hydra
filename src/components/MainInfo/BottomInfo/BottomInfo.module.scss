@@ -1,0 +1,108 @@
+.bottomInfo__container {
+    display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+    border-radius: 90px;
+    padding: 10px 50px;
+    background: rgb(58,52,86);
+    background: -moz-radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    background: radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    .bottomInfo__location {
+        display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+        padding-right: 45px;
+        .locationImage {
+            width: 79px; height: 79px;
+            background-size: cover;
+            background-image: url(../Assets/Location-Icon.png);
+        }
+        .location__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .location__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+            }
+            .location__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+    .bottomInfo__call {
+        display: flex; justify-content: flex-start; align-items: center; flex-flow: row nowrap;
+        height: 125px;
+        border-right: 1px solid #C0B7E8;
+        border-left: 1px solid #C0B7E8;
+        padding: 0 45px;
+        margin: 15px 0;
+        .callImage {
+            width: 59px; height: 59px;
+            background-size: cover;
+            background-image: url(../Assets/phone-call.png);
+            margin-right: 15px;
+        }
+        .call__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .call__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+            }
+            .call__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+    .bottomInfo__message {
+        display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+        padding-left: 45px;
+        .messageImage {
+            width: 65px; height: 65px;
+            background-size: cover;
+            background-image: url(../Assets/mail.png);
+            margin-right: 15px;
+        }
+        .message__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .message__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .message__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1352px) {
+    .bottomInfo__container {
+        .bottomInfo__location {
+            padding-right: 25px;
+            .location__text {
+                .location__topText {
+                font-size: 20px;
+                }
+            }
+        }
+        .bottomInfo__call {
+            padding: 0 25px;
+            .call__text {
+                .call__topText {
+                font-size: 20px;
+                }
+            }
+        }
+        .bottomInfo__message {
+            padding-left: 25px;
+            .message__text {
+                .message__topText {
+                font-size: 20px;
+                }
+            }
+        }
+    }
+}

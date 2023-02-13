@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bottomInfo__container {
+    display: flex; justify-content: space-around; align-items: center; flex-flow: row nowrap;
+    width: 500px; height: 100px;
+    border-radius: 90px;
+    padding: 25px 25px;
+    background: rgb(58,52,86);
+    background: -moz-radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    background: radial-gradient(circle, rgba(58,52,86,1) 0%, rgba(33,30,46,1) 100%);
+    .container__rightArrow {
+        width: 30px; height: 30px;
+        background-image: url(./Assets/chevron-circle-right.png);
+        background-size: cover;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+    }
+    .container__leftArrow {
+        width: 30px; height: 30px;
+        background-image: url(./Assets/chevron-circle-left.png);
+        background-size: cover;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+    }
+    .bottomInfo__location {
+        display: flex; justify-content: center; align-items: center; flex-flow: row nowrap;
+        .locationImage {
+            width: 79px; height: 79px;
+            background-size: cover;
+            background-image: url(../Assets/Location-Icon.png);
+        }
+        .location__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .location__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+            }
+            .location__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+    .bottomInfo__call {
+        display: none; justify-content: flex-start; align-items: center; flex-flow: row nowrap;
+        .callImage {
+            width: 59px; height: 59px;
+            background-size: cover;
+            background-image: url(../Assets/phone-call.png);
+            margin-right: 15px;
+        }
+        .call__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .call__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+            }
+            .call__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+    .bottomInfo__message {
+        display: none; justify-content: center; align-items: center; flex-flow: row nowrap;
+        .messageImage {
+            width: 65px; height: 65px;
+            background-size: cover;
+            background-image: url(../Assets/mail.png);
+            margin-right: 15px;
+        }
+        .message__text {
+            display: flex; justify-content: center; align-items: flex-start; flex-flow: column nowrap;
+            .message__topText {
+                font-size: 24px;
+                color: white;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .message__bottomText {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1352px) {
+    .bottomInfo__container {
+        .bottomInfo__location {
+            .location__text {
+                width: 200px;
+                .location__topText {
+                    display: none;
+                }
+            }
+        }
+        .bottomInfo__call {
+            .call__text {
+                width: 200px;
+                .call__topText {
+                    display: none;
+                }
+            }
+        }
+        .bottomInfo__message {
+            .message__text {
+                width: 200px;
+                .message__topText {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .bottomInfo__container {
+        width: 420px; height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bottomInfo__container {
+        width: 360px; height: 50px;
+        padding: 25px 0px;
+        .bottomInfo__location {
+            .location__text {
+                align-items: center;
+                .location__topText {
+                font-size: 20px;
+                }
+            }
+        }
+        .bottomInfo__call {
+            .call__text {
+                align-items: center;
+                .call__topText {
+                font-size: 20px;
+                }
+            }
+        }
+        .bottomInfo__message {
+            .message__text {
+                align-items: center;
+                .message__topText {
+                font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .bottomInfo__container {
+        width: 90vw; height: 25vw;
+        padding: 2.5vw 2.5vw;
+        .container__rightArrow {
+            width: 9vw; height: 9vw;
+        }
+        .container__leftArrow {
+            width: 9vw; height: 9vw;
+        }
+        .bottomInfo__location {
+            .locationImage {
+                width: 12vw; height: 12vw;
+                margin-right: 0;
+            }
+            .location__text {
+                align-items: center;
+                .location__topText {
+                font-size: 2vw;
+                }
+            }
+        }
+        .bottomInfo__call {
+            .callImage {
+                width: 12vw; height: 12vw;
+                margin-right: 0;
+            }
+            .call__text {
+                align-items: center;
+                .call__topText {
+                font-size: 2vw;
+                }
+            }
+        }
+        .bottomInfo__message {
+            .messageImage {
+                width: 12vw; height: 12vw;
+                margin-right: 0;
+            }
+            .message__text {
+                align-items: center;
+                .message__topText {
+                font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+
+
